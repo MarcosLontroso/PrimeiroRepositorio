@@ -25,15 +25,15 @@ public class MenuBancario {
 			switch(option) {
 			case 1:
 				System.out.println("Enter the amount for credit: ");
-				double debit = sc.nextDouble();
-				conta_bancaria.setCredit(debit);
+				double credit = sc.nextDouble();
+				conta_bancaria.setCredit(credit);
 				System.out.println("--------------");
 			break;
 				
 			case 2: 
 				System.out.println("Enter the amount for debit:");
-				double credit = sc.nextDouble();
-				conta_bancaria.setDebit(credit);
+				double debit = sc.nextDouble();
+				conta_bancaria.setDebit(debit);
 				System.out.println("--------------");
 			break;
 			case 3: System.out.println("Current Balance: " + conta_bancaria.getBalance()); System.out.println("\"--------------\""); break;
