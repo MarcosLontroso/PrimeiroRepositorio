@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-size: cover;
+    background-image: url('https://cdn.pixabay.com/photo/2018/05/30/00/24/thunderstorm-3440450__340.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+    position: relative;
+}
+
+body::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(15, 23, 43, 0.25);
+    z-index: 1;
+}
+
+.login-box{
+    position: relative;
+    width: 480px;
+    padding: 40px 40px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+h2{
+    color: rgb(253, 232, 232);
+    text-align: center;
+    margin-bottom: 45px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.input-group{
+    position: relative;
+    margin-bottom: 35px;
+}
+
+.input-group i {
+    position: absolute;
+    left: 0;
+    top: 12px;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 16px;
+    transition: 0.35;
+}
+
+.input-group input{
+    width: 100%;
+    padding: 12px 5px 12px 30px;
+    font-size: 15px;
+    color: white;
+    background: transparent;
+    border: none;
+    border-bottom: 1.5px solid rgba(255, 255, 255, 0.4);
+    outline: none;
+    transition: 0.35;
+}
+
+.input-group label{
+    position: absolute;
+    top: 12px;
+    left: 30px;
+    color: rgba(255, 255, 255, 0.8);
+    pointer-events: none;
+    transition: 0.35 ease;
+}
+
+.input-group input:focus~label, .input-group input:valid~label{
+    top: -18px;
+    left: 0;
+    font-size: 12px;
+    color: aquamarine;
+    font-weight: 500;
+}
+
+.input-group input:focus~i, .input-group input:valid~i{color: aqua}
+
+.input-group input:focus{border-bottom: 1.5px solid deepskyblue;}
+
+.login-btn{
+    width: 100%;
+    padding: 14px;
+    background: midnightblue;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.login-btn:active{transform: translate(0);}
+
+.signup-link{
+    text-align: center;
+    margin-top: 30px;
+    color: rgb(194, 191, 191);
+    font-size: 13px;
+}
+
+.signup-link a{
+    color: dodgerblue;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 5px;
+}
+
+.signup-link a:hover{
+    color: mediumturquoise;
+    text-decoration: underline;
+} 
