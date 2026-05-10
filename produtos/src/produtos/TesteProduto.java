@@ -69,7 +69,7 @@ public class TesteProduto {
 					
 					dao.atualizar(nome_produto, quantidade, cod_unidade, id_produto, preco_unitario);
 					
-					System.out.println("Deseja inserir mais? 'sim' ou 'não'?"); condition2 = scString.nextLine();
+					System.out.println("Deseja atualizar mais? 'sim' ou 'não'?"); condition2 = scString.nextLine();
 					
 				} while (condition2.equals("sim"));
 				System.out.println("Voltando ao meunu...");
